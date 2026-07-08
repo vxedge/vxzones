@@ -21,7 +21,11 @@
 
 - [ ] Kuksa client / VSS signal emitters in zone guests (vehicle manifest support)
 - [ ] rmw_zenoh-capable guest variant for ROS2-speaking nodes
+- [ ] ARM64 image variants (Jetson AGX hosts; Snapdragon vSoC / Graviton cloud
+      virtual-ECU parity)
+- [ ] CAN-capable guest variants: QEMU CAN controller / SocketCAN in guests, emitting
+      realistic sensor frames onto `type: can` links
 
 ## Phase 4 (optional)
 
-- [ ] ARM64 image variants for Jetson AGX hosts
+- [ ] Zone images validated on physical Jetson / DRIVE AGX hardware
