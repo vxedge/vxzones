@@ -25,6 +25,7 @@
       virtual-ECU parity)
 - [ ] CAN-capable guest variants: QEMU CAN controller / SocketCAN in guests, emitting
       realistic sensor frames onto `type: can` links
+- [ ] RSU node image (`type: rsu`): V2I endpoint sourcing/sinking ETSI ITS-style messages
 
 ## Phase 4 (optional)
 
