@@ -26,6 +26,10 @@
 - [ ] CAN-capable guest variants: QEMU CAN controller / SocketCAN in guests, emitting
       realistic sensor frames onto `type: can` links
 - [ ] RSU node image (`type: rsu`): V2I endpoint sourcing/sinking ETSI ITS-style messages
+- [ ] Restbus node images: DBC-driven CAN sensor/actuator emitters (per manifest
+      `sensors:`/`actuators:` blocks)
+- [ ] Renode firmware targets: Zephyr/FreeRTOS builds runnable under `backend: renode`
+      (register-level GPIO/ADC/CAN peripherals)
 
 ## Phase 4 (optional)
 
