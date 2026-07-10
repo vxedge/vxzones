@@ -23,3 +23,8 @@ Master spec: `../docs/ARCHITECTURE.md` §6 (zone schema), §9 (virtualization st
 - Keep images minimal: agents from `vxagents` are injected per experiment, not baked in.
 - Licensing hygiene: QNX and AAOS artifacts follow their upstream licenses; recipes must be
   runnable by anyone with their own license/SDK access.
+
+## Project skills
+
+AI/contributor skills in `.claude/skills/`: **testbed-quality** (the OEM-adoption bar —
+reproducibility, fidelity honesty, interface stability, standards legibility).
