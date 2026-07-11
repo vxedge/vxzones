@@ -40,7 +40,7 @@ echo "== building static vxprobe (x86_64-unknown-linux-musl)"
 rustup target add x86_64-unknown-linux-musl >/dev/null 2>&1 || true
 ( cd "$WS/vxagents" && cargo build --release --target x86_64-unknown-linux-musl -p vxprobe )
 VXPROBE="$WS/vxagents/target/x86_64-unknown-linux-musl/release/vxprobe"
-file -b "$VXPROBE" | grep -q "statically linked" || {
+file -b "$VXPROBE" | grep -Eq "statically linked|static-pie linked" || {
   echo "error: vxprobe did not link statically" >&2; exit 1; }
 
 echo "== assembling initramfs"
