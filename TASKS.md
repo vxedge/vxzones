@@ -2,12 +2,17 @@
 
 ## Phase 1 (critical path: minimal guests for exp-001)
 
+- [x] `linux-probe` guest bundle builder (2026-07-11, `scripts/build-guest-bundle.sh`):
+      host kernel + busybox initramfs + static-musl vxprobe reflector, SHA256-digested
+      `meta.json` → `images/linux-probe/bundle/`. Used by exp-002/exp-002b's microvm and
+      libvirt arms — which also proved the boot-under-vxedge contract for both VM
+      backends (H3 numbers measured on this bundle)
 - [ ] Repo layout: `manifests/`, `images/<guest>/`, `scripts/publish/`
 - [ ] Zone manifests for the six roles (schema §6.1), initially with placeholder nodes
 - [ ] Zephyr microVM image: virtio-net, boots <1s, runs a UDP echo/probe payload
 - [ ] FreeRTOS microVM image: same contract
-- [ ] Digest tooling: build → sha256 tag → publish script (local registry/dir first)
-- [ ] Boot-under-vxedge smoke test (libvirt + qemu-microvm backends)
+- [ ] Digest tooling: build → sha256 tag → publish script (local registry/dir first;
+      `meta.json` digests exist for linux-probe — generalize per-guest)
 
 ## Phase 2
 
