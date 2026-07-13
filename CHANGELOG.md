@@ -2,10 +2,16 @@
 
 All notable changes to this repo are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows
-[Semantic Versioning](https://semver.org/) once the first tag is cut (see
-`docs/VERSIONING.md` in the `docs` repo — no `v0.1.0` yet, pre-phase-1-gate).
+[Semantic Versioning](https://semver.org/) — see `docs/VERSIONING.md` in the `docs` repo.
 
 ## [Unreleased]
+
+## [0.1.0] - 2026-07-13
+
+**Phase-1 gate passed**: H1, H3, and H4 all have reproducible numbers (`vxperiments`),
+using this repo's guest bundle. Note: this repo is already public (has been since before
+the phase-1 gate); the other phase-1 repos stay private for now — see `docs/STATUS.md`
+for the public-visibility punch list being applied to them before they follow.
 
 ### Added
 - `linux-probe` guest bundle builder (`scripts/build-guest-bundle.sh`): host kernel +
