@@ -27,4 +27,7 @@ Master spec: `../docs/ARCHITECTURE.md` §6 (zone schema), §9 (virtualization st
 ## Project skills
 
 AI/contributor skills in `.claude/skills/`: **testbed-quality** (the OEM-adoption bar —
-reproducibility, fidelity honesty, interface stability, standards legibility).
+reproducibility, fidelity honesty, interface stability, standards legibility) and
+**zone-backend-contract** (the guest-bundle contract every new image — QNX/AAOS/real
+Zephyr/FreeRTOS — must satisfy: boot cmdline, digest meta.json, per-backend
+documentation; shared with `vxedge`, which owns the other half of the same contract).
